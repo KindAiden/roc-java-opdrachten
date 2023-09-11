@@ -36,11 +36,11 @@ void draw(){
     return;
   //check for input
   if(keyPressed){
-    if(keyCode == 87 || keyCode == 38){
+    if(keyCode == 38){
       y1 -= speed;
       y1 = max(y1, 0);
     }
-    if(keyCode == 83 || keyCode == 40){
+    if(keyCode == 40){
       y1 += speed;
       y1 = min(y1, height - height1);
     }
@@ -59,14 +59,14 @@ void moveBall(){
   if(ballx >= 100 && ballx <= 120 && bally + 20 >= y1 && bally <= y1 + height1){
     ballx = 120;
     ballvelocityX = int(random(3, 10));
-    ballvelocityY = int(random(0, 10));
+    ballvelocityY = int(random(0, 15));
     if(bally < y1 + height1 / 2)
       ballvelocityY *= -1;
   }
   if(ballx + 20 >= width - 120 && ballx + 20 <= width - 100 && bally + 20 >= y2 && bally <= y2 + height2){
     ballx = width - 140;
     ballvelocityX = int(random(-3, -10));
-    ballvelocityY = int(random(0, 10));
+    ballvelocityY = int(random(0, 15));
     if(bally < y2 + height2 / 2)
       ballvelocityY *= -1;
   }
