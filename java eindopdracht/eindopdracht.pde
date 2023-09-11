@@ -59,12 +59,16 @@ void moveBall(){
   if(ballx >= 100 && ballx <= 120 && bally + 20 >= y1 && bally <= y1 + height1){
     ballx = 120;
     ballvelocityX = int(random(3, 10));
-    ballvelocityY += int(random(-2, 3));
+    ballvelocityY = int(random(0, 10));
+    if(bally < y1 + height1 / 2)
+      ballvelocityY *= -1;
   }
   if(ballx + 20 >= width - 120 && ballx + 20 <= width - 100 && bally + 20 >= y2 && bally <= y2 + height2){
     ballx = width - 140;
     ballvelocityX = int(random(-3, -10));
-    ballvelocityY += int(random(-2, 3));
+    ballvelocityY = int(random(0, 10));
+    if(bally < y2 + height2 / 2)
+      ballvelocityY *= -1;
   }
   
   //check if the ball has reached the edge of the screen
