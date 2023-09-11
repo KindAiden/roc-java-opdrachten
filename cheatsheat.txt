@@ -1,0 +1,28 @@
+print():print text in console
+println():print text in console op nieuwe regel
+line(x, y, x2, y2):  maakt lijn
+rect(x, y, breete, hoogte, ronding hoeken): maakt vierkant met x, y als linker bovenhoek
+ellipse(x, y, breete, hoogte): maakt cirkel met x, y als midden
+triangle(x1, y1, x2, y2, x3, y3): maakt driehoek met hoeken op x en y
+fill(r, g, b): zorgt dat rect, ellipse, ect. word gevuld met kleur
+noFill(): zorgt dat rect, ellipse, ect. transparant zijn
+width: breete van het scherm
+height: hoogte van het scherm
+operators: 
+	&&: en
+	||: of
+	==: gelijk aan
+	<: kleiner dan
+	>: groter dan
+	<=: kleiner of gelijk aan
+	>=: groter of gelijk aan
+min(a, b): geeft het kleinste getal van de ingevoerde getallen
+max(a, b): geeft het grotste getal van de ingevoerde getallen
+random(a, b): geeft een willekeurig getal van a tot b
+int(a): probeert van de ingevoerde waarde een int te maken
+float(): probeert van de ingevoerde waarde een float te maken
+bool(): maakt een boolean van ingevoerde waarde
+str(): maakt een string van de ingevoerde waarde
+void setup(): word uitgevoerd als het programma start. Zelfde als unity's void Start()
+void draw(): word elk frame uitgevoerd. Zelfde als unity's void Update()
+redraw(): herhaalt draw()
