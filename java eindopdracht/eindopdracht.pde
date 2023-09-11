@@ -36,11 +36,11 @@ void draw(){
     return;
   //check for input
   if(keyPressed){
-    if(key == 'w'){
+    if(keyCode == 87 || keyCode == 38){
       y1 -= speed;
       y1 = max(y1, 0);
     }
-    if(key == 's'){
+    if(keyCode == 83 || keyCode == 40){
       y1 += speed;
       y1 = min(y1, height - height1);
     }
