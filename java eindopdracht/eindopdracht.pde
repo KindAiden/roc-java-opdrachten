@@ -114,7 +114,7 @@ void movePlayer2(){
     return;
   
   if (ballvelocityX < 0)
-    movespeed = 2;
+    movespeed = movespeed / 5;
   if(bally < middle){
     y2 -= movespeed;
   }
