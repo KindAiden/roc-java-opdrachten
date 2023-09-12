@@ -1,6 +1,0 @@
-scope: pong, 1 speler tegen CPU.
-
-variabelen: y-posities van bijde spelers, de x en y van de bal, de snelheid van de bal op de x en y as, punten van bijde spelers.
-
-skelet: oude python code dat ik ooit heb gemaakt.
-
