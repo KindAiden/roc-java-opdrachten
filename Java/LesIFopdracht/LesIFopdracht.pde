@@ -17,9 +17,9 @@ int steen2 = 6;
 int steen3 = 2;
 String resultaat = "";
 
-steen1 = int(random(1, 7));
-steen2 = int(random(1, 7));
-steen3 = int(random(1, 7));
+steen1 = round(random(1, 7));
+steen2 = round(random(1, 7));
+steen3 = round(random(1, 7));
 
 //voeg de getallen van de dobbelstenen toe aan resultaat
 resultaat += str(steen1) + "\n" + str(steen2) + "\n" + str(steen3) + "\n";
