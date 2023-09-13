@@ -34,8 +34,8 @@ if(steen1 == 1 || steen2 == 1 || steen3 == 1){
 }
 else{
   resultaat += str(round((steen1 + steen2 + steen3) / 3)) + " HIT!";
+  if(steen1 == 6 && steen2 == 6 && steen3 == 6)
+    resultaat += "\nWOW, Amazing hit!";
 }
-if(steen1 == 6 && steen2 == 6 && steen3 == 6)
-  resultaat += "\nWOW, Amazing hit!";
 
 print(resultaat);
