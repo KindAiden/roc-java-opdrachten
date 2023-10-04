@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.headbuttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #282828;
+    border: none;
+    margin: auto;
+    padding: auto;
+    position: fixed;
+    width: 100vw;
+    height: 40px;
+}
+
+.headbuttons button{
+    background-color: #282828;
+    color: #ffffff;
+    margin: auto;
+    width: 33.3%;
+    height: 100%;
+    font-family: sans-serif;
+    text-align: center;
+    border: none;
+    transition: background-color 0.5s;
+}
+
+.headbuttons button:hover{
+    background-color: gray;
+}
+
+body{
+    background-color: #9fff9f;
+}
+
+.title {
+    margin: auto;
+    padding-top: 20px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+label, h1, h2, h3, h4, h5 {
+    /* font-family: "Comic Sans Ms"; */
+    font-family: sans-serif;
+}
+
+.content {
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+fieldset{
+    border: 0 none;
+}
+
+.link{
+    color: black;
+}
+
+.link:hover{
+    color: blue;
+}
+
+.footer{
+    background-color: #282828;
+    color: #ffffff;
+    padding: 10px 3vw;
+    width: 100vw;
+    height: 100%;
+    font-family: sans-serif;
+    text-align: center;
+    border: none;
+}
+
+.footer ul{
+    text-align: left;
+    color: #ffffff;
+    width: auto;
+}
+
+.footer a{
+    color: white;
+}
+
+.footer a:hover{
+    color: blue;
+}
+
+@media screen and (max-width: 500px) {
+    .headbuttons {
+        height: 20px;
+    }
+  }
