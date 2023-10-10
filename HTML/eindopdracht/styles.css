@@ -81,10 +81,11 @@ fieldset{
 
 .footer ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     text-align: left;
     color: #ffffff;
     width: auto;
+    margin-bottom: 2%;
 }
 
 .footer a{

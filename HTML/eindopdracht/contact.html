@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="contact.css">
         <title>Aiden is mij</title>
         <link rel="icon" type="image/x-icon" href="images/Mincraft luigi.png">
     </head>
@@ -17,30 +17,22 @@
         <br>
         <!-- title -->
         <header class="title">
-            <h1>Aiden Wedema</h1>
-            <h5>Een website over mij!!</h5>
+            <h1>Contact</h1>
+            <h5>Stuur mij een mail die ik nooit zal lezen!</h5>
         </header>
         <!-- content -->
         <fieldset class="content">
-            <label id="intro">Hoi, ik ben Aiden Wedema.<br>
-                op deze website kan je allemaal leuke weetjes vinden over mij.<br>
-                Klik maar eens op <a class="link" href="about.html">over mij</a>.</label><br><br>
-                <H4>Hieronder zie je wat foto's van mij:</H4>
-            <!-- pictures -->
-            <fieldset class="photos">
-                <fieldset id="photo-1">
-                    <img src="images/ik.jpeg" alt="Aiden Wedema naast plant"><br>
-                    <Label>Ik bij een plant.</Label>
+            <form method="post" action="">
+                <fieldset>
+                    <label for="Voornaam">Voornaam: <input id="Voornaam" name="Voornaam" type="text" required /></label>
+                    <label for="Achternaam">Achternaam: <input id="Achternaam" name="Achternaam" type="text" required /></label>
+                    <label for="email">Email: <input id="email" name="email" type="email" required /></label>
                 </fieldset>
-                <fieldset id="photo-2">
-                    <img src="images/ik2.jpg" alt="Aiden Wedema in badjas"><br>
-                    <Label>De beste foto die ooit van mij genomen zal worden.</Label>
-                </fieldset>
-                <fieldset id="photo-3">
-                    <img src="images/Afbeelding van WhatsApp op 2022-12-06 om 17.31.18_33a3c6fc.jpg" alt="Aiden Wedema in emolga onesie"><br>
-                    <Label>Ik in mijn emolga onesie.</Label>
-                </fieldset>
-            </fieldset>
+                <label for="message">Je bericht:
+                    <textarea id="message" name="message" rows="10" cols="30" placeholder="Beste Aiden..."></textarea>
+                </label>
+                <input type="submit" value="verstuur" />
+            </form>
         </fieldset>
         <!-- footer-->
         <footer class="footer">
@@ -51,7 +43,7 @@
                 <li><a href="https://kindaiden.itch.io/">itch.io</a></li>
                 <li><a href="https://pixai.art/@kindaiden">pixai.art</a></li>
             </ul>
-            <label>Wil je met mij in contact komen? Dat kan <a href="contact.html">hier</a></label>
+            <label>Wil je met mij in contact komen? Dat kan <a href="contact.html">hier</a>.</label>
         </footer>
     </body>
 </html>
