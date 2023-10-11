@@ -1,0 +1,4 @@
+ik vond het een leuk project, ik heb veel nieuwe dingen geleerd over HTML en CSS.
+Ik heb soms wel ruzie gehad met de code, vooral met responsive design en het positioneeren van elementen.
+
+Als ik ergens niet uitkwam heb ik hulp gevraagd van de goden van het internet of een docent/Richard.
