@@ -1,7 +1,7 @@
 ﻿int mode = 0; //determines what menu the user is in
 int submode = 0; //determines where the user is in the current menu
 List<customer> customers = new List<customer>(); //list of all customers
-customer current_customer = new customer();
+customer current_customer = new customer(); //currently selected customer
 
 void main_menu()
 {
@@ -9,6 +9,7 @@ void main_menu()
     Console.Clear();
     Console.WriteLine("Home menu \n\nPlease choose an option\n\n0: Add customer\n1: Display customer info\n2: Exit");
     string? input = Console.ReadLine();
+    //choose which menu to enter
     switch (input)
     {
         //add customer
@@ -26,14 +27,14 @@ void main_menu()
             break;
         //default
         default:
-            Console.WriteLine($"invalid input '{input}'");
             break;
     }
     Console.Clear();
 }
 void add_customer()
 {
-    Console.WriteLine("Add customer"); 
+    Console.Clear();
+    Console.WriteLine("Add customer\n"); 
     string? input;
     switch (submode)
     {
@@ -41,7 +42,7 @@ void add_customer()
         case 0:
             Console.WriteLine("Enter name:");
             input = Console.ReadLine();
-            if (input == null)
+            if (input == null || input == "")
                 break;
             current_customer.name = input;
             submode++;
@@ -50,7 +51,7 @@ void add_customer()
         case 1:
             Console.WriteLine("Enter address:");
             input = Console.ReadLine();
-            if (input == null)
+            if (input == null || input == "")
                 break;
             current_customer.address = input;
             submode++;
@@ -59,7 +60,7 @@ void add_customer()
         case 2:
             Console.WriteLine("Enter email:");
             input = Console.ReadLine();
-            if (input == null)
+            if (input == null || input == "")
                 break;
             current_customer.email = input;
             submode++;
@@ -68,16 +69,17 @@ void add_customer()
         case 3:
             Console.WriteLine("Enter phone number:");
             input = Console.ReadLine();
-            if (input == null)
+            if (input == null || input == "")
                 break;
             current_customer.phone = input;
             submode++;
             break;
         //add name
         case 4:
-            Console.WriteLine("Confirm?\n0:no\n1:yes");
+            display_current_customer_info();
+            Console.WriteLine("\nConfirm?\n0:no\n1:yes");
             input = Console.ReadLine();
-            if (input == null)
+            if (input == null || input == "")
                 break;
             if (input == "1")
             {
@@ -87,12 +89,12 @@ void add_customer()
             mode = 0;
             break;
         default:
-            Console.WriteLine($"invalid mode '{submode}'");
             break;
     }
 }
 void display_customer()
 {
+    Console.Clear();
     Console.WriteLine("Display customer info");
     string? input;
     switch (submode)
@@ -106,6 +108,9 @@ void display_customer()
             }
             Console.WriteLine($"{customers.Count}: home");
             input = Console.ReadLine();
+            //try to convert the input to a number, do nothing if it fails
+            try { int.Parse(input); }
+            catch { break; }
             //go back to home menu 
             if (int.Parse(input) == customers.Count)
             {
@@ -128,7 +133,13 @@ void display_customer()
             display_current_customer_info();
             Console.WriteLine("\n0: back to home\n1: back to customer list\n2: edit info\n3: delete customer");
             input = Console.ReadLine();
-            if (input == "1")
+            //back to all customers
+            if (input == "0")
+            {
+                mode = 0;
+                break;
+            }
+            else if (input == "1")
             {
                 submode--;
                 break;
@@ -138,19 +149,14 @@ void display_customer()
             {
                 mode = 3;
                 submode = 0;
-                Console.Clear();
                 break;
             }
             //delete customer
-            else if(input == "3") 
+            else if (input == "3")
             {
                 delete_customer();
                 break;
             }
-            mode = 0;
-            break;
-        //edit customer info
-        case 2:
             break;
     }
 }
@@ -167,12 +173,16 @@ void edit_customer()
     Console.WriteLine("Edit customer info");
     string? input;
     int index = customers.IndexOf(current_customer);
+    customer old_customer = current_customer;
     switch (submode)
     {
         case 0:
             display_current_customer_info();
             Console.WriteLine("\n0: Change name\n1: Change address\n2: Change email\n3: Change phone number\n4: Back to home");
             input = Console.ReadLine();
+            //try to convert the input to a number, do nothing if it fails
+            try { int.Parse(input); }
+            catch { break; }
             if (int.Parse(input) < 4)
                 submode = int.Parse(input) + 1;
             else
@@ -199,7 +209,7 @@ void edit_customer()
     }
     if (index != -1)
     {
-        customers.Remove(current_customer);
+        customers.Remove(old_customer);
         customers.Insert(index, current_customer);
     }
     else
@@ -227,17 +237,14 @@ void load_customers()
     string path;
     string[] data;
     //load the customers from the current path
-    try
-    {
-        path = Directory.GetCurrentDirectory() + "/customer list.txt";
-        data = File.ReadAllLines(path);
-    }
-    catch
+    path = Directory.GetCurrentDirectory() + "/customer list.txt";
+    if (!File.Exists(path))
     {
         Console.WriteLine("Customer file not found.");
         Console.ReadLine();
         return;
     }
+    data = File.ReadAllLines(path);
     //add the saved customers to the 'customers' list
     try
     {
@@ -275,6 +282,7 @@ void save_customers()
 }
 
 load_customers();
+//main loop 
 while (true)
 {
     switch (mode)
@@ -291,12 +299,11 @@ while (true)
         case 2:
             display_customer();
             break;
+        //edit the customer info
         case 3:
             edit_customer();
             break;
-        //default
         default:
-            Console.WriteLine($"invalid mode '{mode}'");
             mode = 0;
             break;
     }
