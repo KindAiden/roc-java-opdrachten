@@ -1,0 +1,14 @@
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\Administration\bin\Debug\net6.0\Administration.exe
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\Administration\bin\Debug\net6.0\Administration.deps.json
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\Administration\bin\Debug\net6.0\Administration.runtimeconfig.json
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\Administration\bin\Debug\net6.0\Administration.dll
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\Administration\bin\Debug\net6.0\Administration.pdb
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\Administration\obj\Debug\net6.0\Administration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\Administration\obj\Debug\net6.0\Administration.AssemblyInfoInputs.cache
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\Administration\obj\Debug\net6.0\Administration.AssemblyInfo.cs
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\Administration\obj\Debug\net6.0\Administration.csproj.CoreCompileInputs.cache
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\Administration\obj\Debug\net6.0\Administration.dll
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\Administration\obj\Debug\net6.0\refint\Administration.dll
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\Administration\obj\Debug\net6.0\Administration.pdb
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\Administration\obj\Debug\net6.0\Administration.genruntimeconfig.cache
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\Administration\obj\Debug\net6.0\ref\Administration.dll

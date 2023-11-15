@@ -1,0 +1,14 @@
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\oefenopdrachtindeles\obj\Debug\net6.0\oefenopdrachtindeles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\oefenopdrachtindeles\obj\Debug\net6.0\oefenopdrachtindeles.AssemblyInfoInputs.cache
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\oefenopdrachtindeles\obj\Debug\net6.0\oefenopdrachtindeles.AssemblyInfo.cs
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\oefenopdrachtindeles\obj\Debug\net6.0\oefenopdrachtindeles.csproj.CoreCompileInputs.cache
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\oefenopdrachtindeles\bin\Debug\net6.0\oefenopdrachtindeles.exe
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\oefenopdrachtindeles\bin\Debug\net6.0\oefenopdrachtindeles.deps.json
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\oefenopdrachtindeles\bin\Debug\net6.0\oefenopdrachtindeles.runtimeconfig.json
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\oefenopdrachtindeles\bin\Debug\net6.0\oefenopdrachtindeles.dll
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\oefenopdrachtindeles\bin\Debug\net6.0\oefenopdrachtindeles.pdb
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\oefenopdrachtindeles\obj\Debug\net6.0\oefenopdrachtindeles.dll
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\oefenopdrachtindeles\obj\Debug\net6.0\refint\oefenopdrachtindeles.dll
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\oefenopdrachtindeles\obj\Debug\net6.0\oefenopdrachtindeles.pdb
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\oefenopdrachtindeles\obj\Debug\net6.0\oefenopdrachtindeles.genruntimeconfig.cache
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\oefenopdrachtindeles\obj\Debug\net6.0\ref\oefenopdrachtindeles.dll
