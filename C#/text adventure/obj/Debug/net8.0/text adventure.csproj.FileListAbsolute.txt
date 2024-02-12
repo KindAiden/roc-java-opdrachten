@@ -1,0 +1,15 @@
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\text adventure\obj\Debug\net8.0\text adventure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\text adventure\obj\Debug\net8.0\text adventure.AssemblyInfoInputs.cache
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\text adventure\obj\Debug\net8.0\text adventure.AssemblyInfo.cs
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\text adventure\obj\Debug\net8.0\text adventure.csproj.CoreCompileInputs.cache
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\text adventure\obj\Debug\net8.0\text adventure.sourcelink.json
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\text adventure\bin\Debug\net8.0\text adventure.exe
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\text adventure\bin\Debug\net8.0\text adventure.deps.json
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\text adventure\bin\Debug\net8.0\text adventure.runtimeconfig.json
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\text adventure\bin\Debug\net8.0\text adventure.dll
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\text adventure\bin\Debug\net8.0\text adventure.pdb
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\text adventure\obj\Debug\net8.0\text adventure.dll
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\text adventure\obj\Debug\net8.0\refint\text adventure.dll
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\text adventure\obj\Debug\net8.0\text adventure.pdb
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\text adventure\obj\Debug\net8.0\text adventure.genruntimeconfig.cache
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\text adventure\obj\Debug\net8.0\ref\text adventure.dll

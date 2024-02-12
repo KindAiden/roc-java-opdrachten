@@ -1,0 +1,4 @@
+jump
+double jump
+switch between foreground and background
+auto-run

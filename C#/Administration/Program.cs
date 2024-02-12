@@ -1,7 +1,7 @@
 ﻿int mode = 0; //determines what menu the user is in
 int submode = 0; //determines where the user is in the current menu
-List<customer> customers = new List<customer>(); //list of all customers
-customer current_customer = new customer(); //currently selected customer
+List<Customer> customers = new List<Customer>(); //list of all customers
+Customer current_customer = new Customer(); //currently selected customer
 
 void main_menu()
 {
@@ -14,7 +14,7 @@ void main_menu()
     {
         //add customer
         case "0":
-            current_customer = new customer();
+            current_customer = new Customer();
             mode = 1;
             break;
         //display customer info
@@ -173,7 +173,7 @@ void edit_customer()
     Console.WriteLine("Edit customer info");
     string? input;
     int index = customers.IndexOf(current_customer);
-    customer old_customer = current_customer;
+    Customer old_customer = current_customer;
     switch (submode)
     {
         case 0:
@@ -251,7 +251,7 @@ void load_customers()
         foreach (var item in data)
         {
             string[] customer_data = item.Split(',');
-            customer new_customer = new customer
+            Customer new_customer = new Customer
             {
                 name = customer_data[0],
                 address = customer_data[1],
@@ -274,7 +274,7 @@ void save_customers()
     //clear the file to not save duplicate customers
     File.WriteAllText(path, string.Empty);
     //write customers to the file one by one
-    foreach (customer customer in customers)
+    foreach (Customer customer in customers)
     {
         string info = customer.name + "," + customer.address + "," + customer.email + "," + customer.phone;
         File.AppendAllText(path, info + Environment.NewLine);
@@ -308,7 +308,7 @@ while (true)
             break;
     }
 }
-struct customer
+class Customer
 {
     public string name;
     public string address;

@@ -12,3 +12,4 @@ C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\Administration\obj\Debug\net6.0\r
 C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\Administration\obj\Debug\net6.0\Administration.pdb
 C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\Administration\obj\Debug\net6.0\Administration.genruntimeconfig.cache
 C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\Administration\obj\Debug\net6.0\ref\Administration.dll
+C:\Users\aiden\Documents\ROC\Beroepsgericht\C#\Administration\obj\Debug\net6.0\Administration.sourcelink.json

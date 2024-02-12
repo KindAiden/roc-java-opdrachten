@@ -1,1 +1,6 @@
-
+Jesse,Straat van Florida 1,j.wissink@rocvf.nl,06 87654321
+Aiden,antiguastraat 42,aidenwedema@gmail.com,+31 6 24906525
+Sylvester,haydenplantsoen 10,sylvester.bosma@student.rocvf.nl,+31 6 21271227
+Richard,gaweg 98,richard.devries@student.rocvf.nl,+31 6 14250479
+g,g,g,g
+j,g,jd,21345
